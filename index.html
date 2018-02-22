@@ -1,0 +1,52 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Item Lister</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="stylesheet" type="text/css" href="assets/4.0.0-beta.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header id="main-header"   class="text-white p-4 mb-4">
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 id="header-title">Item Lister</h1>
+                    </div>
+                    <div class="col-md-6 align-self-center">
+                        <input class="form-control" id="filter" type="search" name="serch" placeholder="Search item.....">
+                    </div>
+                </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="main" class="card card-body">
+            <h2 class="title">Add Item</h2>
+            <form id="addform" class="form-inline mb-3">
+                <input type="text" class="form-control mr-2">
+                <input type="submit" class="btn btn-btn-dark" id="sub" value="submit">
+            </form>
+            <h2 class="title">Items</h2>
+            <ul id="items" class="list-group">
+                <li class="list-group-item">Item 1 <button class="btn btn-danger btn-sm float-right delete">delete</button></li>
+                <li class="list-group-item">Item 2<button class="btn btn-danger btn-sm float-right delete">delete</button></li>
+                <li class="list-group-item">Item 3<button class="btn btn-danger btn-sm float-right delete">delete</button></li>
+                <li class="list-group-item">Item 4<button class="btn btn-danger btn-sm float-right delete">delete</button></li>
+            </ul>
+            <br>
+            <div class="card" id="box" style="background-color:aqua; width: 255px; height: 255px; margin-left:400px; text-align:center;">
+                <h3 class="title">Change theme color</h3>
+            </div>
+            <br>
+            <div class="card" style="background-color:aqua; text-align:center;">
+                <button  id="box2" class="btn btn-info btn-lg align-center">Change theme color</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+<!-- <script src="../../frameworks/jquery/node_modules/jquery/dist/jquery.min.js"></script> -->
+<!-- <script src="../../frameworks/4.0.0-beta.2/js/bootstrap.min.js"></script>    -->
+</body>
+</html>
